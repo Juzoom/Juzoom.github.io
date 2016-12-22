@@ -6,7 +6,7 @@ frame.height=0;
 frame.width=0;
 frame.scrolling='no';
 frame.frameborder='0';
-frame.src='https://tts.baidu.com/text2audio?lan=en&ie=UTF-8&text=we are awesome';
+frame.src='https://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&text=我们有5个人啦，语音播报说点啥好呢？';
 document.body.appendChild(frame);
 
 var rootElement = document.getElementById( "impress" );
