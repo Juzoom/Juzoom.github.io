@@ -1,23 +1,30 @@
 {
-  "name": "juzoom",
-  "version": "1.0.0",
-  "description": "团队介绍",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Juzoom/Juzoom.github.io.git"
-  },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Juzoom/Juzoom.github.io/issues"
-  },
-  "homepage": "https://github.com/Juzoom/Juzoom.github.io#readme",
-  "dependencies": {
-    "impress.js": "^0.6.0",
-    "webpack": "^1.14.0"
-  }
+    "name": "juzoom",
+    "version": "1.0.0",
+    "description": "团队介绍",
+    "main": "index.js",
+    "scripts": {
+        "start": "webpack-dev-server --progress",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "webpack-dev-server --devtool eval --progress --colors --inline --hot --content-base build --port 4188 --host 127.0.0.1",
+        "build": "webpack --inline --progress --colors"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Juzoom/Juzoom.github.io.git"
+    },
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Juzoom/Juzoom.github.io/issues"
+    },
+    "homepage": "https://github.com/Juzoom/Juzoom.github.io#readme",
+    "dependencies": {
+        "impress.js": "^0.6.0",
+        "webpack": "^1.14.0"
+    },
+    "devDependencies": {
+        "open-browser-webpack-plugin": "0.0.2",
+        "webpack-dev-server": "~1.10.1"
+    }
 }
