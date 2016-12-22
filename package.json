@@ -1,0 +1,23 @@
+{
+  "name": "juzoom",
+  "version": "1.0.0",
+  "description": "团队介绍",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juzoom/Juzoom.github.io.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Juzoom/Juzoom.github.io/issues"
+  },
+  "homepage": "https://github.com/Juzoom/Juzoom.github.io#readme",
+  "dependencies": {
+    "impress.js": "^0.6.0",
+    "webpack": "^1.14.0"
+  }
+}
