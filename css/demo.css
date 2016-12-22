@@ -671,3 +671,34 @@ a:focus {
     Thanks for reading. I hope you enjoyed it at least as much as I enjoyed writing it
     for you.
 */
+
+/* 自定义样式 */
+.avatar_box{
+    overflow: hidden;
+}
+.avatar{
+    display: inline-block;
+    line-height: 100px;
+    height: 100px;
+    width: 100px;
+    float: left;
+}
+.avatar .avatar_link{
+    border: 0;
+    background: none;
+}
+.avatar img{
+    width: 100px;
+    height: 100px;
+    border-radius: 200px;
+}
+.nickname_box{
+    height: 100px;
+    line-height: 100px;
+    float: left;
+    margin-left: 15px;
+    display: inline-block;
+}
+.intro_box{
+    margin:5px 5px;
+}
