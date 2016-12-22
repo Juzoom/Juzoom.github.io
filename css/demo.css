@@ -673,6 +673,12 @@ a:focus {
 */
 
 /* 自定义样式 */
+.audio_play{
+    z-index: 999;
+    position: fixed;
+    top:10px;
+    left: 10px;
+}
 .avatar_box{
     overflow: hidden;
 }
