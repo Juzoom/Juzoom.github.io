@@ -15,7 +15,7 @@ module.exports = {
     },
 	output: {
 		path: path.resolve(__dirname, 'build'),
-		filename: 'bundle.js',
+		filename: 'Juzoom.js',
 		library: 'Juzoom',
 		libraryTarget: 'umd',
 		publicPath: '/static/'

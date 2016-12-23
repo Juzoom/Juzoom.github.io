@@ -44,7 +44,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "/static/";
 
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -54,7 +54,15 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(1);
+	module.exports = __webpack_require__(2);
+
+
+/***/ },
+/* 1 */,
+/* 2 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(3);
 	impress().init();
 	// https://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&text=123
 	var frame = document.createElement('iframe');
@@ -62,7 +70,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	frame.width=0;
 	frame.scrolling='no';
 	frame.frameborder='0';
-	frame.src='https://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&text=我们有5个人啦，语音播报说点啥好呢？';
+	// frame.src='https://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&text=我们有5个人啦，语音播报说点啥好呢？';
+	frame.src='../music/shoop.mp3';
 	document.body.appendChild(frame);
 
 	var rootElement = document.getElementById( "impress" );
@@ -73,7 +82,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	});
 
 /***/ },
-/* 1 */
+/* 3 */
 /***/ function(module, exports) {
 
 	/**
