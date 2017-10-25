@@ -33,40 +33,27 @@ var Game;
             // this.head = this.bodies[0];
             // this.target = this.model.food;
         }
-        AI.prototype.born = function () {
-            var _this = this;
-            _super.prototype.born.call(this);
+        AI.prototype.move = function () {
+            _super.prototype.move.call(this);
             var self = this;
-            this.AITimer = setInterval(function () {
-                var cl;
-                if (self.direction == 0 /* left */ || self.direction == 2 /* right */) {
-                    if (self.bodies[0].pos.y > self.model.food.pos.y) {
-                        cl = 38 /* up */;
-                    }
-                    else if (self.bodies[0].pos.y < self.model.food.pos.y) {
-                        cl = 40 /* down */;
-                    }
+            var cl;
+            if (self.direction == 0 /* left */ || self.direction == 2 /* right */) {
+                if (self.bodies[0].pos.y > self.model.food.pos.y) {
+                    cl = 38 /* up */;
                 }
-                else {
-                    if (self.bodies[0].pos.x > self.model.food.pos.x) {
-                        cl = 37 /* left */;
-                    }
-                    else if (self.bodies[0].pos.x < self.model.food.pos.x) {
-                        cl = 39 /* right */;
-                    }
+                else if (self.bodies[0].pos.y < self.model.food.pos.y) {
+                    cl = 40 /* down */;
                 }
-                // if (self.bodies[0].pos.x > self.model.food.pos.x) {
-                // 	cl = KeyCode.left
-                // } else if(self.bodies[0].pos.x < self.model.food.pos.x) {
-                // 	cl = KeyCode.right
-                // }
-                // if (self.bodies[0].pos.y > self.model.food.pos.y) {
-                // 	cl = KeyCode.up
-                // } else if(self.bodies[0].pos.y < self.model.food.pos.y) {
-                // 	cl = KeyCode.down
-                // }
-                _super.prototype.setDirection.call(_this, cl);
-            }, self.speed * 2);
+            }
+            else {
+                if (self.bodies[0].pos.x > self.model.food.pos.x) {
+                    cl = 37 /* left */;
+                }
+                else if (self.bodies[0].pos.x < self.model.food.pos.x) {
+                    cl = 39 /* right */;
+                }
+            }
+            _super.prototype.setDirection.call(this, cl);
         };
         AI.prototype.die = function () {
             _super.prototype.die.call(this);
